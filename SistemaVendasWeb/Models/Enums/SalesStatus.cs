@@ -1,11 +1,9 @@
-﻿
-
-namespace SistemaVendasWeb.Models.Enums
+﻿namespace SistemaVendasWeb.Models.Enums
 {
     public enum SalesStatus : int
     {
-        Peding = 0,   //Pedente
-        Billed = 1,   //Faturado
-        Canceled = 2  //Cancelado
+        Pending = 0,
+        Billed = 1,
+        Canceled = 2
     }
 }
