@@ -1,0 +1,23 @@
+﻿using SistemaVendasWeb.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace SistemaVendasWeb.Services
+{
+    public class SellerService
+    {
+        private readonly SistemaVendasWebContext _context;
+
+        public SellerService (SistemaVendasWebContext context)
+        {
+            _context = context;
+        }
+
+        public List<Seller> FindAll()
+        {
+            return _context.Seller.ToList();
+        }
+    }
+}
