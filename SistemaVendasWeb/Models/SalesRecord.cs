@@ -1,14 +1,21 @@
 ﻿using SistemaVendasWeb.Models.Enums;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace SistemaVendasWeb.Models
 {
     public class SalesRecord
     {
         public int Id { get; set; }
+
+        [Display(Name = "Data")]
         public DateTime Date { get; set; }
+
+        [Display(Name = "Valor")]
         public double Amount { get; set; }
         public SalesStatus Status { get; set; }
+
+        [Display(Name = "Vendedor")]
         public Seller Seller { get; set; }
 
         public SalesRecord()
